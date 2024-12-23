@@ -26,7 +26,7 @@ def send_webhook_notification(game_title, game_status, start_date, end_date, lin
     embed = {
         "title": game_title,
         "url": link,
-        "description": f"Status: {game_status}",
+        "description": f"Status: **{game_status}**",
         "color": 3447003,  # Blue color
         "fields": [],
         "footer": {"text": "Epic Games Free Games Notification"},
