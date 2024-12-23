@@ -1,0 +1,9 @@
+services:
+  epic-games-notifier:
+    build: .
+    environment:
+      - WEBHOOK_URL=${WEBHOOK_URL}
+      - DROP_URL=${DROP_URL}
+      - ROLE_ID=${ROLE_ID}
+      - CHECK_INTERVAL=${CHECK_INTERVAL}
+    restart: unless-stopped
